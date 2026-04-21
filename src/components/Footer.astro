@@ -1,8 +1,19 @@
 ---
-const platform = "github";
-const username = "withastro";
+import Social from "./Social.astro";
+
+const repositoryName = "milieth-portofolio"
 ---
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
 
 <footer>
-  <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+  <p>Learn more about my projects on <a href={`https://github.com/Milieth/${repositoryName}`}>github</a>!</p>
+  <Social platform="facebook" username="Pravda Mahyun" />
+  <Social platform="youtube" username="Milieth" />
+  <Social platform="twitter" username="Milieth" />
 </footer>
